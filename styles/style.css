@@ -44,9 +44,13 @@ h4 {
 .header__content-title {
     color: #7A4495;
     font-weight: bold;
-    font-size: xx-large;
+    font-size: 40px;
+    transition: all 0.5s;
 }
-.header__content-title a {
+.header__content-title:hover {
+    font-size: 50px;
+}
+.header__content-title a { 
     position: absolute;
     left: 10%;
     top: 30%
@@ -58,6 +62,10 @@ h4 {
     margin: 0 15px;
     color: #7A4495;
     font-weight: bold;
+    transition: all 0.5s;
+}
+.header__content-navbar a:hover {
+    font-size: 20px;
 }
 
 /* Body */
@@ -115,6 +123,11 @@ h4 {
     cursor: pointer;
     font-weight: bold;
     font-size: 16px;
+    transition: font-size 0.3s;
+}
+.card__link:hover{
+    font-size: 18px;
+    border: 2px solid #7A4495;
 }
 .card__header-img {
     width: 100%;
@@ -159,6 +172,11 @@ h4 {
     cursor: pointer;
     font-weight: bold;
     font-size: 16px;
+    transition: font-size 0.3s;
+}
+.more__link:hover {
+    font-size: 18px;
+    border: 2px solid #7A4495;
 }
 .category h2 {
     color: #7A4495;
@@ -175,6 +193,11 @@ h4 {
     margin-left: 30px;
     margin-top: 10px;
     font-size: 20px;
+    transition: all 0.3s;
+}
+.category__list-item:hover {
+    font-size: 22px;
+    font-weight: bold;
 }
 .aboutus {
     width: 100%;
@@ -199,8 +222,8 @@ h4 {
 }
 .team img {
     margin: 20px;
-    height: 200px;
-    width: 300px;
+    height: auto;
+    width: 250px;
     border: 5px solid #7A4495;
     border-radius: 10px;
 }
@@ -276,6 +299,10 @@ h4 {
     font-family: 'Ruda', sans-serif;
     border: none;
     border-radius: 10px;
+    outline: none;
+}
+.contact__form-item:focus {
+    border: 2px solid #B983FF;
 }
 .contact__form-button {
     display: block;
@@ -290,6 +317,11 @@ h4 {
     font-weight: bold;
     font-family: 'Ruda', sans-serif;;
     border-radius: 10px;
+    transition: all 0.5s;
+}
+.contact__form-button:hover {
+    width: 70%;
+    font-size: 18px;
 }
 
 /* Footer */
@@ -309,6 +341,19 @@ h4 {
 .footer__follow-listitem {
     display: inline-block;
     margin-left: 20px;
+}
+.footer__follow-listimg {
+    height: 50px;
+    width: 50px;
+    transition: all 0.5s;
+}
+.footer__navegacion-listitem:hover {
+    font-weight: bold;
+}
+.footer__follow-listimg:hover {
+    height: 55px;
+    width: 55px;
+
 }
 
 
