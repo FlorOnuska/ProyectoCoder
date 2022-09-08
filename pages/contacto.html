@@ -47,29 +47,39 @@
         </div>
     </header>
     <main>
-        <div class="contact">
-            <section class="contact__info">
-                <h2>Contactanos</h2>
-                <ul class="contact__info-list">
-                    <li>11 56147874</li>
-                    <li>contacto@florapasteleria.com</li>
-                    <li>Avenida San Martin 5941</li>
-                </ul>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.39707532423!2d-58.573384947566005!3d-34.615461116377574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1659730036238!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-            <section class="contact_form">
-                <h2>Escribinos</h2>
-                <form action="">
-                    <label class="contact__form-item" for="nombre">Nombre</label>
-                    <input class="contact__form-item" type="text" placeholder="Escriba su nombre" id="nombre">
-                    <label class="contact__form-item" for="email">Email</label>
-                    <input class="contact__form-item" type="email" placeholder="Escriba su email" id="email">
-                    <label class="contact__form-item" for="comentario">Dejanos tu mensaje</label>
-                    <textarea class="contact__form-item" name="" id="comentario" cols="20" rows="5" placeholder="Escriba tus comentarios"></textarea>
-                    <button class="contact__form-button" type="submit">Enviar</button>
-                </form>
-            </section>
-        </div>     
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <section class="contact__info">
+                    <h2>Contactanos</h2>
+                    <ul class="contact__info-list">
+                        <li>11 56147874</li>
+                        <li>contacto@florapasteleria.com</li>
+                        <li>Avenida San Martin 5941</li>
+                    </ul>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.39707532423!2d-58.573384947566005!3d-34.615461116377574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1659730036238!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+              </div>
+              <div class="col">
+                <section class="contact_form">
+                    <h2>Escribinos</h2>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label contact__form-item">Nombre</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Escriba su nombre">
+                      </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label contact__form-item">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Escriba su email">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label contact__form-item">Dejanos tu mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                    <button type="button" class="btn contact__form-button">Enviar</button>
+                </section>
+              </div>
+            </div>
+          </div>
     </main>
     <footer>
         <div class="footer">
