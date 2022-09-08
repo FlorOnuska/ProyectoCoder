@@ -25,48 +25,27 @@ h4 {
 }
 
 /* Header */
-.header{
-    position: sticky;
-    top: 0;
+
+.header {
     background-color: #DBADE4;
-    z-index: 1;
 }
-.header__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-.header__content-logo {
+
+.logo-flora {
     width: 25%;
-    display: inline-block;
 }
-.header__content-title {
+
+.nav_header_item:hover {
     color: #7A4495;
-    font-weight: bold;
+}
+
+.navbar-brand {
     font-size: 40px;
-    transition: all 0.5s;
-}
-.header__content-title:hover {
-    font-size: 50px;
-}
-.header__content-title a { 
-    position: absolute;
-    left: 10%;
-    top: 30%;
-    color: #7A4495;
-}
-.header__content-navbar {
-    display: flex;
-}
-.header__content-navbar a {
-    margin: 0 15px;
-    color: #7A4495;
     font-weight: bold;
-    transition: all 0.5s;
+    color: #7A4495;
 }
-.header__content-navbar a:hover {
-    font-size: 20px;
+
+.nav-item a {
+    color: #7A4495;
 }
 
 /* Body */
@@ -131,6 +110,7 @@ h4 {
 .card__link:hover{
     font-size: 18px;
     border: 2px solid #7A4495;
+    color: #7A4495;
 }
 .card__header-img {
     width: 100%;
@@ -151,6 +131,7 @@ h4 {
     text-align: center;
     font-size: 30px;
     color:#7A4495;
+    font-weight: bold;
 }
 .products__content {
     display: grid;
@@ -180,28 +161,30 @@ h4 {
 .more__link:hover {
     font-size: 18px;
     border: 2px solid #7A4495;
-}
-.category h2 {
     color: #7A4495;
-    text-align: center;
-    margin: 10px;
 }
-.category__list {
-    text-align: center;
+
+.category {
+    margin-top: 40px;
 }
-.category__list-item {
-    color: #B983FF;
-    display: inline-block;
-    text-align: center;
-    margin-left: 30px;
-    margin-top: 10px;
-    font-size: 20px;
-    transition: all 0.3s;
+
+.sidebar-sticky {
+    background-color: #E4CDED;
 }
-.category__list-item:hover {
-    font-size: 22px;
+
+.category_title {
     font-weight: bold;
 }
+
+.category_title { 
+    margin-left: 10px;
+    color: #7A4495;
+}
+
+.category_item:hover {
+    color: #7A4495;
+}
+
 .aboutus {
     width: 100%;
 }
@@ -344,11 +327,16 @@ h4 {
 .footer__follow-listitem {
     display: inline-block;
     margin-left: 20px;
+    color: #7A4495;
 }
 .footer__follow-listimg {
     height: 50px;
     width: 50px;
     transition: all 0.5s;
+}
+
+.footer__navegacion-listitem a {
+    color: #7A4495;
 }
 .footer__navegacion-listitem:hover {
     font-weight: bold;
