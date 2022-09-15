@@ -1,0 +1,56 @@
+.header{
+    position: sticky;
+    top: 0;
+    background-color: #DBADE4;
+    z-index: 1;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        &-logo {
+            width: 25%;
+            display: inline-block;
+        }
+
+        &-title {
+            font-weight: bold;
+            font-size: 40px;
+            transition: all 0.5s;
+
+            a {
+                position: absolute;
+                left: 10%;
+                top: 30%;
+                color: #82f6e1;
+
+                &:hover {
+                    color: #7A4495;
+                }
+
+            }
+
+        }
+
+        &-navbar {
+            display: flex;
+
+            a {
+                margin: 0 15px;
+                color: #82f6e1;
+                font-weight: bold;
+                transition: all 0.5s;
+
+                &:hover {
+                    color: #7A4495;
+                }
+
+            }
+
+        }
+    }
+}
+
+

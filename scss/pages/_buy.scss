@@ -1,0 +1,25 @@
+.buy {
+    margin: 30px;
+    padding: 20px;
+
+    &__container {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/Coco2.jpg");
+        height: 300px;
+        width: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+    }
+
+    &__content {
+        color: #7A4495;
+        margin: 20px;
+
+        p {
+            margin-top: 20px;
+            color: #B983FF;
+        }
+    }
+}
