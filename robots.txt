@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://floronuska.github.io/ProyectoCoder/Sitemap.xml
