@@ -1,0 +1,54 @@
+.header{
+    position: sticky;
+    top: 0;
+    background-color: $bgLight;
+    z-index: 1;
+
+    &__content {
+        @include templateFlex(space-between, true);
+        position: relative;
+
+        &-logo {
+            width: 25%;
+            display: inline-block;
+        }
+
+        &-title {
+            font-weight: bold;
+            font-size: 40px;
+            transition: all 0.5s;
+
+            a {
+                position: absolute;
+                left: 10%;
+                top: 30%;
+                color: $fontLight;
+
+                &:hover {
+                    color: $fontDark;
+                }
+
+            }
+
+        }
+
+        &-navbar {
+            display: flex;
+
+            a {
+                margin: 0 15px;
+                color: $fontLight;
+                font-weight: bold;
+                transition: all 0.5s;
+
+                &:hover {
+                    color: $fontDark;
+                }
+
+            }
+
+        }
+    }
+}
+
+

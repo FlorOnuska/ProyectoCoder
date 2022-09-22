@@ -1,0 +1,13 @@
+.container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/Brownies1.jpg");
+    @extend .bgimagecontainer;
+
+    &__text {
+        position: absolute;
+        text-align: $textAlign;
+        left: 40%;
+        top: 30%;
+        color: $fontLight;
+        font-size: 24px; 
+    }
+}

@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body {
+    background-color: #F2E5F4; 
+    height: 100%;
+    font-family: 'Ruda', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+nav {
+    display: inline-block;
+}
+h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    color: #7A4495;
+}
+
+.bgimagecontainer {
+    height: 300px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+@mixin templateGrid($columns, $fraction) {
+    display: grid;
+    grid-template-columns: repeat($columns, $fraction);
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin templateFlex ($itemsJustify, $alignItems){
+    display: flex;
+    justify-content: $itemsJustify;
+
+    @if ($alignItems == true) {
+        align-items: center;
+      }
+}

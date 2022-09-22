@@ -1,0 +1,63 @@
+.products {
+    margin: 30px 0 50px 0;
+    padding: 0 20px;
+
+    &__container {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/Manzana1.jpg");
+        @extend .bgimagecontainer;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        margin-top: 40px;
+        text-align: $textAlign;
+        font-size: 30px;
+        color:$fontDark;
+    }
+
+    &__content {
+        @include templateGrid(3, 1fr);
+        gap: 50px;
+        max-width: 1200px;
+        margin: 0 auto;
+        color: $fontMed;
+    }
+}
+
+
+.catalog {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.category {
+    width: fit-content;
+    margin: 80px 0 0 20px;
+    border-top: 1px solid #B983FF;
+    text-align: center;
+
+    h3 {
+        color: $fontDark;
+        text-align: $textAlign;
+        margin: 10px;
+    }
+
+    &__list {
+        text-align: $textAlign;
+        border-bottom: 1px solid #B983FF;
+
+        &-item {
+            color: $fontMed;
+            text-align: $textAlign;
+            margin-top: 10px;
+            font-size: 16px;
+            transition: all 0.3s;
+            margin-bottom: 5px;
+
+            &:hover {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+}

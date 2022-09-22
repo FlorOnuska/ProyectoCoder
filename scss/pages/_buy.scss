@@ -1,0 +1,19 @@
+.buy {
+    margin: 30px;
+    padding: 20px;
+
+    &__container {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/Coco2.jpg");
+        @extend .bgimagecontainer;
+    }
+
+    &__content {
+        color: $fontDark;
+        margin: 20px;
+
+        p {
+            margin-top: 20px;
+            color: $fontMed;
+        }
+    }
+}

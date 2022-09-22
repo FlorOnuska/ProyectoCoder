@@ -1,0 +1,90 @@
+.contact {
+    height: 100vh;
+    @include templateGrid(2, 1fr);
+
+    &__container {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/Cupcakes1.jpg");
+        @extend .bgimagecontainer;
+    }
+
+    &__info {
+        width: 40%;
+        margin-left: 50px;
+
+        h2 {
+            color: $fontDark;
+            text-align: left;
+            margin: 30px;
+        }
+
+        &-list {
+            margin: 20px;
+
+            li {
+                color: $fontMed;
+                line-height: 24px;
+                display: inline-block;
+            }
+        }
+
+        iframe {
+            height: 400px;
+            width: 400px;
+        }
+    }
+
+    &_form {
+        position: relative;
+        width: 40%;
+        margin-left: 50px;
+
+        h2 {
+            position: absolute;
+            color: $fontDark;
+            text-align: center;
+        }
+
+        form {
+            height: 500px;
+            margin-top: 40px;
+
+        }
+    }
+
+    &__form-item {
+        display: block;
+        padding: 10px;
+        height: 40px;
+        width: 100%;
+        color: $fontMed;
+        font-family: 'Ruda', sans-serif;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+
+        &:focus {
+            border: 2px solid #82f6e1;
+        }
+    }
+
+    &__form-button {
+        display: block;
+        margin: auto;
+        margin-top: 25px;
+        height: 40px;
+        width: 50%;
+        background-color: $bgLight;
+        color: $fontDark;
+        cursor: pointer;
+        border: 3px solid #B983FF;
+        font-weight: bold;
+        font-family: 'Ruda', sans-serif;;
+        border-radius: $borderRadius;
+        transition: all 0.5s;
+
+        &:hover {
+            color: $fontLight;
+            background-color: $bgDark;
+        }
+    }
+}

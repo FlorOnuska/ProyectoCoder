@@ -1,0 +1,22 @@
+{
+  "name": "flora-pasteleria",
+  "version": "1.0.0",
+  "description": "Proyecto pasteleria",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlorOnuska/ProyectoCoder.git"
+  },
+  "author": "Florencia Onuska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlorOnuska/ProyectoCoder/issues"
+  },
+  "homepage": "https://github.com/FlorOnuska/ProyectoCoder#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
