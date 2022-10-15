@@ -35,7 +35,7 @@ h4 {
 .header {
   position: sticky;
   top: 0;
-  background-color: #DBADE4;
+  background-color: #7A4495;
   z-index: 1; }
   .header__content {
     display: flex;
@@ -65,6 +65,27 @@ h4 {
         transition: all 0.5s; }
         .header__content-navbar a:hover {
           color: #7A4495; }
+    .header__content-navbar-mobile {
+      display: none; }
+      .header__content-navbar-mobile i {
+        font-size: 35px;
+        color: #82f6e1;
+        padding: 10px; }
+      .header__content-navbar-mobile:hover > ul {
+        display: block; }
+      .header__content-navbar-mobile ul {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 100px;
+        width: 100%;
+        background-color: #DBADE4; }
+        .header__content-navbar-mobile ul li {
+          padding: 25px 0;
+          text-align: center; }
+          .header__content-navbar-mobile ul li a {
+            color: #82f6e1;
+            font-weight: bold; }
 
 .card {
   background-color: #FFFFFF;
@@ -125,14 +146,16 @@ h4 {
   justify-content: space-around;
   max-width: 100%;
   margin: 0 auto;
-  background-color: #B983FF; }
+  background-color: #7A4495; }
   .footer__content {
     font-size: 16px;
     text-align: center;
     line-height: 24px;
-    color: #7A4495; }
+    color: #82f6e1; }
     .footer__content h4 {
       color: #82f6e1; }
+  .footer__navegacion-listitem a {
+    color: #82f6e1; }
   .footer__follow-listitem {
     display: inline-block;
     margin-left: 20px; }
@@ -332,6 +355,8 @@ h4 {
     display: none; }
   .header__content-title {
     display: none; }
+  .header__content-navbar-mobile {
+    display: block; }
   .container__text {
     display: none; } }
 

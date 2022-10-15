@@ -1,7 +1,7 @@
 .header{
     position: sticky;
     top: 0;
-    background-color: $bgLight;
+    background-color: $bgDark;
     z-index: 1;
 
     &__content {
@@ -47,6 +47,40 @@
 
             }
 
+        }
+
+        &-navbar-mobile {
+            display: none;
+
+            i {
+                font-size: 35px;
+                color: $fontLight;
+                padding: 10px;
+            }
+
+            &:hover > ul {
+                display: block;
+
+            }
+
+            ul {
+                display: none;
+                position: absolute;
+                right: 0;
+                top: 100px;
+                width: 100%;
+                background-color: $bgLight;
+
+                li {
+                    padding: 25px 0;
+                    text-align: center;
+
+                    a {
+                        color: $fontLight;
+                        font-weight: bold;
+                    }
+                }
+            }
         }
     }
 }
